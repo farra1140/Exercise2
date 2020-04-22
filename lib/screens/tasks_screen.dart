@@ -11,6 +11,17 @@ class _TaskListScreenState extends State<TaskListScreen> {
     return WillPopScope(
       onWillPop: () => Future.value(false),
       child: Scaffold(
+        body: ListView.separated(
+          itemBuilder: (context,index) => ListTile(
+            title:Text('Criterion #${index +1}'),
+            subtitle: Text('The description of this criterion'),
+            
+            
+          ), 
+          separatorBuilder: (context,index) => Divider(
+            color:Colors.blueGrey,
+          ), 
+          itemCount: 4),
         appBar: AppBar(
           leading: Container(),
           title: Text('Task list of TODO'),
