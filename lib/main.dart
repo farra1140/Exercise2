@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:exercise2/screens/todos_screen.dart';
-// import 'package:exercise2/screens/tasks_screen.dart';
+ import 'package:exercise2/screens/tasks_screen.dart';
 
 void main() => runApp(
       MaterialApp(
@@ -9,6 +9,6 @@ void main() => runApp(
         debugShowCheckedModeBanner: false,
         theme: ThemeData(primarySwatch: Colors.purple),
         home: TodoListScreen(),
-        // home: TaskListScreen(),
+         //home: TaskListScreen(),
       ),
     );
